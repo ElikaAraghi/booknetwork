@@ -6,13 +6,13 @@ The main idea behind the analysis of Book Network is finding communities of book
 
 <h2 id="findingcommunities">Finding communities</h2>
 
-   <div id="inlineImages">
-    <figure><img style="width:40%;height:600px;"  src="img/Communities_fans.png" alt="" /><figcaption>Fans Communities</figcaption></figure>
-   	<figure><img style="width:40%;height:600px;" src="img/communities_haters.png" alt="" /><figcaption>Haters Communities</figcaption></figure>
-   </div>
 <p>At first we had to identify communities within our networks. We used the Louvain Community detection algorithm for that. 
 This algorithm optimizes modudularity, which is a measure of density of connections within community compared to connections to other communities. The optimization is performed in two steps. Firstly, the method looks for "small" communities by optimizing modularity locally. Second, it aggregates nodes belonging to the same community and builds a new network whose nodes are the communities. This is repeated until maximum modularity is achieved. On the downside, it is harder to detect small communities within large network, because they are often merged together into a bigger community. It might explain why the book communites often contain groups of books on several topics. </p>
 
+ <div id="inlineImages">
+  <figure><img style="width:40%;height:600px;"  src="img/Communities_fans.png" alt="" /><figcaption>Fans Communities</figcaption></figure>
+   <figure><img style="width:40%;height:600px;" src="img/communities_haters.png" alt="" /><figcaption>Haters Communities</figcaption></figure>
+ </div>
 <p>Resulting communities often contain more than 100 books. In the further analysis we've used top 50 most connected books within each community, to get more easily interpretable results. These books were read by most of the users, therefore we believe this sample is good representation of the community.</p>
 
 <div class="inlineImages ">  
