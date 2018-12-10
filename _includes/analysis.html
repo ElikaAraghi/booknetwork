@@ -6,6 +6,10 @@ The main idea behind the analysis of Book Network is finding communities of book
 
 <h2 id="findingcommunities">Finding communities</h2>
 
+   <div id="inlineImages">
+    <figure><img style="width:40%;height:600px;"  src="img/Communities_fans.png" alt="" /><figcaption>Fans Communities</figcaption></figure>
+   	<figure><img style="width:40%;height:600px;" src="img/communities_haters.png" alt="" /><figcaption>Haters Communities</figcaption></figure>
+   </div>
 <p>At first we had to identify communities within our networks. We used the Louvain Community detection algorithm for that. 
 This algorithm optimizes modudularity, which is a measure of density of connections within community compared to connections to other communities. The optimization is performed in two steps. Firstly, the method looks for "small" communities by optimizing modularity locally. Second, it aggregates nodes belonging to the same community and builds a new network whose nodes are the communities. This is repeated until maximum modularity is achieved. On the downside, it is harder to detect small communities within large network, because they are often merged together into a bigger community. It might explain why the book communites often contain groups of books on several topics. </p>
 
@@ -229,8 +233,11 @@ We proceeded to calculate mean sentiment and standart deviation to choose only t
 
 <h2 id="fansvshaterscomparison">Fans vs Haters Comparison</h2>
 
-<p>//todo</p>
+<p>The confusion matrix is created -with haters communities on x-axis and fans communities on the y-axis -  to see which communities correspond to each other.  As it is shown in the confusion matrix, community tuples (3,3) and (2,11) have a lot of books in common. </p>
+<figure><img style="width:40%;height:600px;" src="img/con_matrix.png" alt="" /><figcaption>Confusion Matrix</figcaption></figure>
 
+<p>To find out why people liked and disliked this books, we find the mutual books for these two tuples of communities, then we find the reviews with positive sentiment and negative sentiment, then we make word could using TF_IDF for only English reviews.</p>
+   
 <h2 id="recommendations-1">Recommendations</h2>
 <p>In the end, we can tell you what books to read and what to avoid! By finding the name of your favourite book in our fans graph, we can find the 5 most weighted neighbours and recommend them to you, simply because these books are rated high with people who also liked your favourite book. by doing the same procedure for haters graph we can tell you to what books to avoid as well. Here are some examples:</p>
 
