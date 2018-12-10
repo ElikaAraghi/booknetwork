@@ -245,7 +245,17 @@ Degree Distributions shows how many books are connected to each book, While weig
     <figure><img style="display: inline; margin: 0 5px;"  src="img/F_COM_1_PIE.png" alt="" /><figcaption>Non-english Languages</figcaption></figure>
    </div>
 <h4>Community 3</h4>
- <p>//to do</p>
+   <p>We've selected one of haters communities for demonstration. As you can see from wordclouds, there are much more different topics coming up, compared to Fan network.  
+   The Hater network is more sparse, and edges have lower weight. Together with results of text analysis we can assume that disliking books is more random, than having a preference for the books.</p>
+   <h4>Community 11</h4>
+  <p>Within community 11, there are many different genres of books. There are lot of non-ficiton books, especially self help books, several poetry and fantasy books. Both descriptions and reviews point out to individual books, it is hard to find an overlaying theme.</p>
+  <p>In conclusion, the communities in Hater network are quite varied in genre and it is difficult to describe them sipmply.</p>
+    <div id="inlineImages">
+    <figure><img style="display: inline; margin: 0 5px;"  src="img/H_COM_11_DESC.png" alt="" /><figcaption>Descriptions</figcaption></figure>
+    <figure><img style="display: inline; margin: 0 5px;"  src="img/H_COM_11_TAG.png" alt="" /><figcaption>Tags</figcaption></figure>
+    <figure><img style="display: inline; margin: 0 5px;"  src="img/H_COM_11_REV.png" alt="" /><figcaption>Reviews</figcaption></figure>
+    <figure><img style="display: inline; margin: 0 5px;"  src="img/H_COM_11_PIE.png" alt="" /><figcaption>Non-english Languages</figcaption></figure>
+   </div>
  
  
     <div id="inlineImages">
@@ -294,17 +304,7 @@ Degree Distributions shows how many books are connected to each book, While weig
 </table>
 
    <h3>Selected Communities</h3>
-   <p>We've selected one of haters communities for demonstration. As you can see from wordclouds, there are much more different topics coming up, compared to Fan network.  
-   The Hater network is more sparse, and edges have lower weight. Together with results of text analysis we can assume that disliking books is more random, than having a preference for the books.</p>
-   <h4>Community 11</h4>
-  <p>Within community 11, there are many different genres of books. There are lot of non-ficiton books, especially self help books, several poetry and fantasy books. Both descriptions and reviews point out to individual books, it is hard to find an overlaying theme.</p>
-  <p>In conclusion, the communities in Hater network are quite varied in genre and it is difficult to describe them sipmply.</p>
-    <div id="inlineImages">
-    <figure><img style="display: inline; margin: 0 5px;"  src="img/H_COM_11_DESC.png" alt="" /><figcaption>Descriptions</figcaption></figure>
-    <figure><img style="display: inline; margin: 0 5px;"  src="img/H_COM_11_TAG.png" alt="" /><figcaption>Tags</figcaption></figure>
-    <figure><img style="display: inline; margin: 0 5px;"  src="img/H_COM_11_REV.png" alt="" /><figcaption>Reviews</figcaption></figure>
-    <figure><img style="display: inline; margin: 0 5px;"  src="img/H_COM_11_PIE.png" alt="" /><figcaption>Non-english Languages</figcaption></figure>
-   </div>
+
 <h5>Books</h5>
 <ul>
 <li>The Silmarillion by J.R.R. Tolkien</li>
@@ -320,16 +320,16 @@ Degree Distributions shows how many books are connected to each book, While weig
 <h2 id="fansvshaterscomparison">Fans vs Haters Comparison</h2>
 
 <p>The confusion matrix is created -with haters communities on x-axis and fans communities on the y-axis -  to see which communities correspond to each other.  As it is shown in the confusion matrix, community tuples (3,3) and (2,11) have a lot of books in common. </p>
-<figure><img style="width:100%;height:600px;" src="img/con_matrix.png" alt="" /><figcaption>Confusion Matrix</figcaption></figure>
+<figure><img style="display: inline; margin: 0 5px;" src="img/con_matrix.png" alt="" /><figcaption>Confusion Matrix</figcaption></figure>
 
 <p>To find out why people liked and disliked this books, we find the mutual books for these two tuples of communities, then we find the reviews with positive sentiment and negative sentiment, then we make word could using TF_IDF for only English reviews.</p>
 <div id="inlineImages">
 <figure>
-<img style="width:50%;height:600px;"  title="Negative reviews(2,11)" src="img/compare_neg_2_11.png" alt="" />
+<img style="display: inline; margin: 0 5px;"  title="Negative reviews(2,11)" src="img/compare_neg_2_11.png" alt="" />
    <figcaption>Negative Reviews(2,11)</figcaption>
 </figure>
 <figure>
-<img style="width:80%;height:600px;"  title="Positive reviews(2,11)" src="img/compare_com_2_11.png" alt="" />
+<img style="display: inline; margin: 0 5px;"  title="Positive reviews(2,11)" src="img/compare_com_2_11.png" alt="" />
     <figcaption>"Positive reviews(2,11)"</figcaption>
 </figure>
 </div>
@@ -339,11 +339,11 @@ Degree Distributions shows how many books are connected to each book, While weig
    
 <div id="inlineImages">
 <figure>
-<img style="width:50%;height:600px;"  title="Negative reviews(3,3)" src="img/compare_neg_3_3.png" alt="" />
+<img style="display: inline; margin: 0 5px;"  title="Negative reviews(3,3)" src="img/compare_neg_3_3.png" alt="" />
    <figcaption>Negative Reviews(3,3)</figcaption>
 </figure>
 <figure>
-<img style="width:80%;height:600px;"  title="Positive reviews(3,3)" src="img/compare_com_3_3.png" alt="" />
+<img style="display: inline; margin: 0 5px;"  title="Positive reviews(3,3)" src="img/compare_com_3_3.png" alt="" />
     <figcaption>"Positive reviews(3,3)"</figcaption>
 </figure>
 </div>
