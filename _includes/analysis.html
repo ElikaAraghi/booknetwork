@@ -234,9 +234,34 @@ We proceeded to calculate mean sentiment and standart deviation to choose only t
 <h2 id="fansvshaterscomparison">Fans vs Haters Comparison</h2>
 
 <p>The confusion matrix is created -with haters communities on x-axis and fans communities on the y-axis -  to see which communities correspond to each other.  As it is shown in the confusion matrix, community tuples (3,3) and (2,11) have a lot of books in common. </p>
-<figure><img style="width:40%;height:600px;" src="img/con_matrix.png" alt="" /><figcaption>Confusion Matrix</figcaption></figure>
+<figure><img style="width:80%;height:600px;" src="img/con_matrix.png" alt="" /><figcaption>Confusion Matrix</figcaption></figure>
 
 <p>To find out why people liked and disliked this books, we find the mutual books for these two tuples of communities, then we find the reviews with positive sentiment and negative sentiment, then we make word could using TF_IDF for only English reviews.</p>
+<div id="inlineImages">
+<figure>
+<img style="width:50%;height:600px;"  title="Negative reviews(2,11)" src="img/compare_neg_2_11.png" alt="" />
+   <figcaption>Negative Reviews(2,11)</figcaption>
+</figure>
+<figure>
+<img style="width:80%;height:600px;"  title="Positive reviews(2,11)" src="img/compare_com_2_11.png" alt="" />
+    <figcaption>"Positive reviews(2,11)"</figcaption>
+</figure>
+</div>
+   
+   
+   
+   
+<div id="inlineImages">
+<figure>
+<img style="width:50%;height:600px;"  title="Negative reviews(3,3)" src="img/compare_neg_3_3.png" alt="" />
+   <figcaption>Negative Reviews(3,3)</figcaption>
+</figure>
+<figure>
+<img style="width:80%;height:600px;"  title="Positive reviews(3,3)" src="img/compare_com_3_3.png" alt="" />
+    <figcaption>"Positive reviews(3,3)"</figcaption>
+</figure>
+</div>
+   
    
 <h2 id="recommendations-1">Recommendations</h2>
 <p>In the end, we can tell you what books to read and what to avoid! By finding the name of your favourite book in our fans graph, we can find the 5 most weighted neighbours and recommend them to you, simply because these books are rated high with people who also liked your favourite book. by doing the same procedure for haters graph we can tell you to what books to avoid as well. Here are some examples:</p>
