@@ -44,6 +44,13 @@ figure {
 
 figcaption {margin: 0  0 10%  10%;}
 
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
 h1,
 h2,
 h3,
