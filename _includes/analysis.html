@@ -10,8 +10,8 @@ The main idea behind the analysis of Book Network is finding communities of book
 This algorithm optimizes modudularity, which is a measure of density of connections within community compared to connections to other communities. The optimization is performed in two steps. Firstly, the method looks for "small" communities by optimizing modularity locally. Second, it aggregates nodes belonging to the same community and builds a new network whose nodes are the communities. This is repeated until maximum modularity is achieved. On the downside, it is harder to detect small communities within large network, because they are often merged together into a bigger community. It might explain why the book communites often contain groups of books on several topics. </p>
 
  <div id="inlineImages">
-  <figure><img style="width:40%;height:600px;"  src="img/Communities_fans.png" alt="" /><figcaption>Fans Communities</figcaption></figure>
-   <figure><img style="width:40%;height:600px;" src="img/communities_haters.png" alt="" /><figcaption>Haters Communities</figcaption></figure>
+  <figure><img style="width:40%;"  src="img/Communities_fans.png" alt="" /><figcaption>Fans Communities</figcaption></figure>
+   <figure><img style="width:40%;" src="img/communities_haters.png" alt="" /><figcaption>Haters Communities</figcaption></figure>
  </div>
 <p>Resulting communities often contain more than 100 books. In the further analysis we've used top 50 most connected books within each community, to get more easily interpretable results. These books were read by most of the users, therefore we believe this sample is good representation of the community.</p>
 
@@ -191,7 +191,7 @@ We proceeded to calculate mean sentiment and standart deviation to choose only t
 </div>
 <br />
 <h2 id="fanssnetwork">Fans Network</h2>
-<figure><img style="width:40%;height:600px;"  src="img/projected_fans.png" alt="" /><figcaption>Projection Of Bipartite Fans graph on books</figcaption><figcaption>Number Of Edges: 955177</figcaption><figcaption>Number Of Nodes: 3000</figcaption></figure>
+<figure><img style="width:60%;"  src="img/projected_fans.png" alt="" /><figcaption>Projection Of Bipartite Fans graph on books</figcaption><figcaption>Number Of Edges: 955177</figcaption><figcaption>Number Of Nodes: 3000</figcaption></figure>
    <h3>Network Statistics</h3>
  
  <p>
@@ -267,7 +267,7 @@ Degree Distributions shows how many books are connected to each book, While weig
    </div>
  
 <h2 id="hatersnetwork">Haters Network</h2>
-   <figure><img style="width:40%;height:600px;"  src="img/projected_haters.png" alt="" /><figcaption>Projection Of Bipartite Haters graph on books</figcaption><figcaption>Number Of Edges: 19901</figcaption><figcaption>Number Of Nodes: 2137</figcaption></figure>
+   <figure><img style="width:60%;"  src="img/projected_haters.png" alt="" /><figcaption>Projection Of Bipartite Haters graph on books</figcaption><figcaption>Number Of Edges: 19901</figcaption><figcaption>Number Of Nodes: 2137</figcaption></figure>
    <h3>Network Statistics</h3>
  <div id="inlineImages">
 <figure><img style="display: inline; margin: 0 5px;" title="Haters_degree" src="img/degree_haters.png" alt="" /><figcaption>Degree Distribution</figcaption></figure>
