@@ -10,7 +10,7 @@ color:
   links: '#219ab3'
 
 # Footer settings
-footer: Your Website
+footer: Elika A., Monika F.
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -23,7 +23,7 @@ social:
   - title: bitbucket
     url: http://bitbucket.org/jekyll
   - title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
+    url: https://github.com/MonikaF/booknetwork
 
 # Build settings
 markdown: kramdown
